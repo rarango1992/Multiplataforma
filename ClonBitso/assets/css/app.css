@@ -1,0 +1,68 @@
+.elemento {
+    border: solid green;
+}
+
+.cuadro {
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor-blanco {
+    background-color: white
+}
+
+.encabezado p {
+    width: 140px;
+    display: block;
+    margin: auto;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    background-color: whitesmoke;
+    color: #666;
+    position: relative;
+    top: 32px;
+    text-align: center;
+    font-family: 'din_next_lt_promedium', 'Arial', Sans-Serif;
+}
+
+.encabezado hr {
+    width: 100%;
+    border-bottom: 1px solid #C8C9CA;
+}
+
+.boton-nice {
+    padding: 8px 15px 8px 15px;
+    color: #a5c88f;
+    border: 2px solid #a5c88f;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-family: 'din_next_lt_promedium', 'Arial', Sans-Serif;
+}
+
+.menu-lateral {
+    margin: 0px;
+    padding: 0px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.menu-lateral p {
+    color: #aaa;
+    font-family: 'din_next_lt_proregular', 'Arial', Sans-Serif;
+    padding-left: 13px;
+    margin-bottom: 15px;
+    line-height: 0.7em;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    border-left: 4px solid #f0f2f2;
+    cursor: pointer;
+    cursor: hand;
+}
+
+.menu-lateral p.seleccionado {
+    color: #6d6d6d;
+    border-left: 4px solid #a5c88f;
+    font-family: 'din_next_lt_promedium', 'Arial', Sans-Serif;
+}
