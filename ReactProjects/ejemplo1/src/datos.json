@@ -1,0 +1,21 @@
+{
+    "articulos": [
+        {
+            "id" : 1,
+            "titulo" : "Arduino nano 1",
+            "description" : "Para IoT"
+        },
+        {
+            "id": 2,
+            "titulo": "Arduino nano 2",                    
+            "description": "Para IoT"
+        },
+        {
+            "id": 3,
+            "titulo": "Arduino nano 3",
+            "description": "Para IoT"
+        }
+
+    ]
+}
+    
