@@ -18,11 +18,16 @@ post insertar body : {"id" : 0, "nombre" : "fulano", "apellidos" : "asdasd"}
 
 */
 
-const URL_API = "http://programacion.xyz/mtw/204/crud/index.php/api/"
+const URL_API = "http://localhost/crud/index.php/api/";
 
 function editar(id) {
     window.location.href = 'edicion.html?id=' + id;
 }
+
+function elimnar(id) {
+    window.location.href = 'edicion.html?id=' + id;
+}
+
 
 function tblUsuario(data) {
     console.log(data);
@@ -51,6 +56,9 @@ function tblUsuario(data) {
 }
 
 $(document).ready(function() {
+
+
+
     $("#btnBuscar").click(function() {
         var url = URL_API + "usuarios/obtener";
         $.ajax({
@@ -65,4 +73,11 @@ $(document).ready(function() {
             }
         });
     });
+
+    $("#btnNuevo").click(function() {
+        window.location.href = "edicion.html";
+    });
+        
+    
+
 });
