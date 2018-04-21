@@ -35,12 +35,19 @@ class Populares extends Component {
                                 x++;
                                 return <Articulo {...item} key={item.id} /> 
                             }
-                            if(x==0 && i==this.props.articulos.length)
+                            //console.log(x);
+                            if(x===0 && i===this.props.articulos.length)
+                            {
                                 return (
                                     <div>
                                         <hr/>
                                         <p className="text-center"> Sin coincidencias... </p>
                                     </div>
+                                );
+                            }
+                            else
+                                return (
+                                    <div></div>
                                 );
                         })
                     }

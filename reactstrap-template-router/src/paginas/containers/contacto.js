@@ -4,6 +4,7 @@ import MainContent from '../components/main-content';
 import LateralContent from '../components/laterla-content';
 import Sidebar from '../../navegacion/components/sidebar';
 import FormContacto from '../../formularios/components/form-contacto';
+import SERVICE from '../../constantes';
 
 
 class Contacto extends Component
@@ -23,7 +24,7 @@ class Contacto extends Component
     guardarComentario = (e,correo,mensaje) => {
         //alert(correo);
         //alert(mensaje);
-        fetch('http://programacion.xyz/mtw/204/react/index.php/api/sitio/comentario',{
+        fetch(SERVICE.CONTROLLER_SITIO_COMENTARIO,{
             method: 'POST',
             headers: {
                 'Accept': 'application/json',

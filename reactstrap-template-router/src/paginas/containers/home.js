@@ -5,6 +5,7 @@ import LateralContent from '../components/laterla-content';
 import MainContent from '../components/main-content';
 import Populares from '../../articulos/components/populares';
 import Sidebar from '../../navegacion/components/sidebar';
+import SERVICE from '../../constantes';
 
 export default class Home extends Component{
 
@@ -34,7 +35,7 @@ export default class Home extends Component{
 
     componentWillMount()
     {
-        fetch('http://programacion.xyz/mtw/204/react/index.php/api/sitio/populares')
+        fetch(SERVICE.CONTROLLER_SITIO_POPULARES)
         .then(result =>{
             return result.json();
         })

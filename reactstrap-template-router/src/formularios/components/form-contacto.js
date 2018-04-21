@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Container,Button,Form,FormGroup,Label,Input,Jumbotron} from 'reactstrap';
+import {Container,Button,FormGroup,Label,Input,Jumbotron} from 'reactstrap';
 
 
 export default class FormContacto extends Component{
